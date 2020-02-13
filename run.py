@@ -1,4 +1,4 @@
-# Tested on: Python 3.7.3
+# Tested on: Python 3.7.3 (MacOS)
 import requests
 import os.path
 import schedule
@@ -56,10 +56,6 @@ def do_crawl():
                 pass
 
 
-do_crawl()
-
-
-'''
 # Monday (Offset: 40 minutes)
 schedule.every().monday.at("08:10").do(do_crawl)
 schedule.every().monday.at("08:50").do(do_crawl)
@@ -144,5 +140,3 @@ schedule.every().friday.at("16:50").do(do_crawl)
 while True:
     schedule.run_pending()
     time.sleep(1)
-
-'''
