@@ -7,7 +7,6 @@ This project is developed to have a tiny web-client handy to perform domain craw
 * eliot
 * eliot-tree
 * schedule
-* colored
 
 ## Modules installation (automated)
 ```bash
