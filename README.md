@@ -9,8 +9,18 @@ This project is developed to have a tiny web-client handy to perform domain craw
 * schedule
 * colored
 
+## Modules installation (automated)
+```bash
+$mkdir -p ~/tools && cd ~/tools
+$git clone https://github.com/sujitawake/webclient.git
+$cd webclient
+$pipenv install request eliot eliot-tree schedule
+```
+
 ## Usage
 ```sh
+$cd ~/tools/webclient
+$pipenv shell # You should be inside a virtualenv now
 $chmod +x run.py
 $python run.py
 ```
