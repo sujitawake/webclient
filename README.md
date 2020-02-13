@@ -85,3 +85,5 @@ $eliot-tree logs # Output pasted below
     │   └── root_domain/21/3 ⇒ succeeded 2020-02-13 15:50:03
     
 ```
+
+**NOTE** Generated logs are overwritten each time when the program starts. So if you want to debug any previously generated errors, **don't forget to take backup** of the previously generated log file.
