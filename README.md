@@ -86,4 +86,6 @@ $eliot-tree logs # Output pasted below
     
 ```
 
-**NOTE** Generated logs are overwritten each time when the program starts. So if you want to debug any previously generated errors, **don't forget to take backup** of the previously generated log file.
+***NOTE***
+<br>
+Generated logs are overwritten each time when the program starts. So if you want to debug any previously generated errors, **don't forget to take backup** of the previously generated log file.
