@@ -37,7 +37,6 @@ http://networkadvertising.org/
 http://nytimes.com/
 http://google.co.jp/
 http://photos.google.com/
-http://gstatic.com/
 http://imdb.com/
 http://uol.com.br/
 http://mail.ru/
@@ -53,7 +52,7 @@ http://policies.google.com/
 http://theguardian.com/
 http://t.me/
 http://google.com.br/
-http://whatsapp.com/
+http://web.whatsapp.com/
 http://wikimedia.org/
 http://myspace.com/
 http://cnn.com/
