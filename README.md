@@ -38,53 +38,17 @@ This program generates ASCII logs during the program execution. This would aid t
 ## View logs
 
 ```
-$cat logs | eliot-tree
+$cat logs | eliot-tree --local-timezone
 # OR
-$eliot-tree logs
+$eliot-tree logs --local-timezone
 ```
 
-## Logs output
+## Debug logs output
 
-```bash
-$eliot-tree logs # Output pasted below
-```
 
-```
-42f305eb-39fe-409e-ae62-ff5dbe8b985b
-└── domains_iterator/1 ⇒ started 2020-02-13 15:49:28 ⧖ 41.863s
-    ├── root_domain/2/1 ⇒ started 2020-02-13 15:49:28 ⧖ 1.682s
-    │   ├── source: http://youtube.com/
-    │   ├── redirect_url/2/2/1 ⇒ started 2020-02-13 15:49:29 ⧖ 1.304s
-    │   │   ├── target: http://youtube.com/
-    │   │   └── redirect_url/2/2/2 ⇒ succeeded 2020-02-13 15:49:30
-    │   └── root_domain/2/3 ⇒ succeeded 2020-02-13 15:49:30
-    ├── root_domain/16/1 ⇒ started 2020-02-13 15:49:57 ⧖ 0.557s
-    │   ├── source: http://en.wikipedia.org/
-    │   ├── redirect_url/16/2/1 ⇒ started 2020-02-13 15:49:57 ⧖ 0.381s
-    │   │   ├── target: http://en.wikipedia.org/
-    │   │   └── redirect_url/16/2/2 ⇒ succeeded 2020-02-13 15:49:57
-    │   └── root_domain/16/3 ⇒ succeeded 2020-02-13 15:49:57
-    ├── root_domain/19/1 ⇒ started 2020-02-13 15:50:01 ⧖ 0.144s
-    │   ├── source: http://bp.blogspot.com/
-    │   └── root_domain/19/2 ⇒ failed 2020-02-13 15:50:01
-    │       ├── errno: None
-    │       ├── exception: requests.exceptions.ConnectionError
-    │       └── reason: HTTPConnectionPool(host='bp.blogspot.com', port=80): Max retries exceeded with url: / (Caused by New…
-    ├── root_domain/20/1 ⇒ started 2020-02-13 15:50:01 ⧖ 0.143s
-    │   ├── source: http://googleusercontent.com/
-    │   └── root_domain/20/2 ⇒ failed 2020-02-13 15:50:01
-    │       ├── errno: None
-    │       ├── exception: requests.exceptions.ConnectionError
-    │       └── reason: HTTPConnectionPool(host='googleusercontent.com', port=80): Max retries exceeded with url: / (Caused …
-    ├── root_domain/21/1 ⇒ started 2020-02-13 15:50:01 ⧖ 2.116s
-    │   ├── source: http://maps.google.com/
-    │   ├── redirect_url/21/2/1 ⇒ started 2020-02-13 15:50:02 ⧖ 1.380s
-    │   │   ├── target: http://maps.google.com/
-    │   │   └── redirect_url/21/2/2 ⇒ succeeded 2020-02-13 15:50:03
-    │   └── root_domain/21/3 ⇒ succeeded 2020-02-13 15:50:03
-    
-```
+![alt text](https://github.com/sujitawake/webclient/blob/master/screen.png "Debug logs screenshot")
 
-***NOTE***
+
+**NOTE:**
 <br>
 Generated logs are overwritten each time when the program starts. So if you want to debug any previously generated errors, **don't forget to take backup** of the previously generated log file.
