@@ -35,7 +35,7 @@ This program generates ASCII logs during the program execution. This would aid t
   * Start/End time, took to crawl each URL
 * Exceptions are handled and logged internally into the log file (logs)
 
-## View logs
+## View execution logs
 
 ```
 $cat logs | eliot-tree --local-timezone
@@ -43,8 +43,9 @@ $cat logs | eliot-tree --local-timezone
 $eliot-tree logs --local-timezone
 ```
 
-## Debug logs output
+## Logs screenshot
 
+This is a glimpse of the output which you would see when you want to debug if any of the crawling event went wrong in case of errors.
 
 ![alt text](https://github.com/sujitawake/webclient/blob/master/screen.png "Debug logs screenshot")
 
